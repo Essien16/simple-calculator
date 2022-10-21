@@ -43,11 +43,11 @@ first_answer = calculation(num1, num2)
 
 print(f"{num1} {operation_symbol} {num2} = {first_answer}")
 
-game_on = False
-while not game_on:
+keep_calculating = False
+while not keep_calculating:
     should_continue = input(f"Type 'y' to continue calculating with {first_answer}, or type 'n' to exit.")
     if should_continue == "n":
-        game_on = True
+        keep_calculating = True
     elif should_continue == "y":
         operation_symbol = input("Pick an operation: ")
         num3 = float(input("What is the next number?: "))
